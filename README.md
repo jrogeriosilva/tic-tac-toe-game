@@ -1,6 +1,7 @@
 # Tic-Tac-Toe Game
 
 A simple and interactive implementation of the classic Tic-Tac-Toe game using HTML, CSS, and JavaScript. In this project is a practical exercise in web development, showcasing fundamental concepts such as DOM manipulation, event handling, and game logic.
+
 ![Tic-Tac-Toe](images/jogo-da-velha.png)
 
 ## Features
