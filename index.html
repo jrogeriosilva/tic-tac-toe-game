@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="/js/menu.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="/styles/menu.css">
+</head>
+
+<body>
+    <header>
+        <h1> Jogo da Velha</h1>
+    </header>
+    <aside>
+        <p class="config-text">Configurações</p>
+        <label for="mode">Modo</label>
+        <select class="mode" id="mode">
+            <option value="1">Jogador vs Jogador ⚔️</option>
+            <option value="2">Jogador vs IA 🤖 </option>
+        </select>
+        <div id="tab-size">
+            <label for="size">Tamanho do Tabuleiro</label>
+            <input type="number" id="size" min="3" max="10" value="3">
+
+            <button onclick="selectMode()">Iniciar Jogo</button>
+        </div>
+
+    </aside>
+</body>
+
+</html>

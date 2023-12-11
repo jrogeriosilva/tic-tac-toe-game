@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #222831;
+}
+
+header{
+    align-items: center;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 5px;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.cell {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10%;
+    margin: 0 2px;
+    border: 2px solid #393e468e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #393E46;
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .cell {
+        width: 3rem;
+        height: 3rem;
+        font-size:2.5rem;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 600px) {
+    .cell {
+        width: 5vh;
+        height: 5vh;
+        font-size:1.7rem;
+    }
+}
+
+
+.cell:hover{
+    border: 2px solid #bbb;
+    transition: 0.5s;
+}
+
+.winning-cell {
+    border: 2px solid black;
+    animation: win 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes win {
+    from {
+        border-color: #bbb;
+    }
+
+    to {
+        border-color: #00ADB5;
+    }
+
+
+    header {
+        margin-bottom: 50px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+h1 {
+    color: #EEEEEE;
+}
+
+button {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    background: #00ADB5;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover,
+button:focus {
+    background: #00acb565;
+}
+
+
+
+#winner-message
+{   margin-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.reload {
+    font-family: Lucida Sans Unicode
+  }
+
+
